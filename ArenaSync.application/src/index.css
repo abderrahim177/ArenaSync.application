@@ -82,7 +82,7 @@ button{
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 50%;
+    width: 60%;
     gap: 20px;
     padding-left: 10px;
 }
@@ -116,7 +116,7 @@ button{
     margin-bottom: 40px;
 }
 .buttons button{
-    padding: 5px 10px;
+    padding: 10px 20px;
     background-color: rgb(82, 82, 151);
     color: white;
 }
@@ -159,5 +159,37 @@ button{
     font-size: 20px;
 }
 @media(max-width : 600px){
-    
+    .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+}
+.Father{
+    display: flex;
+    width: 100%;
+}
+.details{
+    border: solid ;
+    height: fit-content;
+    border-radius: 10px;
+    margin-inline: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.details_buttons{
+    margin: auto;
+     background-color: rgb(13, 13, 38);
+    display: flex;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 0 10px;
+}
+.details_buttons button{
+    background-color: transparent;
+    color: white;
 }

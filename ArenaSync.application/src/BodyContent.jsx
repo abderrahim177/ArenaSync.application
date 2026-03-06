@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { tournamentData } from "./tournamentDB";
 
-export default function AffichDta() {
+export default function AffichDta({search}) {
 
   const [filter, setFilter] = useState("All");
 
@@ -11,12 +11,13 @@ export default function AffichDta() {
       : tournamentData.filter((el) => el.status === filter);
   return (
       <div className='Father'>
+        <div>
         <div className="buttons">
         <button onClick={() => setFilter("All")}>All</button>
         <button onClick={() => setFilter("On_Going")}>On Going</button>
         <button onClick={() => setFilter("Upcoming")}>Upcoming</button>
       </div>
-      <hr />
+      <hr className="hr"/>
       <div className="content">
         
       {filteredData.map((element) => (
@@ -44,12 +45,8 @@ export default function AffichDta() {
         
       ))}
     </div>
-    <div>
-      
-       
-          
-       
     </div>
+    
     </div>
   );
 
