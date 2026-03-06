@@ -1,13 +1,37 @@
-import { tournamentData } from './tournamentDB';
+import { useState } from "react";
+import { tournamentData } from "./tournamentDB";
+
 export default function AffichDta() {
+
+  const [filter, setFilter] = useState("All");
+
+  const filteredData =
+    filter === "All"
+      ? tournamentData
+      : tournamentData.filter((el) => el.status === filter);
   return (
-    <div className="content">
-      {tournamentData.map((element) => (
+      <div className='Father'>
+        <div className="buttons">
+        <button onClick={() => setFilter("All")}>All</button>
+        <button onClick={() => setFilter("On_Going")}>On Going</button>
+        <button onClick={() => setFilter("Upcoming")}>Upcoming</button>
+      </div>
+      <hr />
+      <div className="content">
+        
+      {filteredData.map((element) => (
         <div className='caontainer icons_container' key={element.id}>
           <div className='title'>
-          <div>
+          <div className="source">
+            <div>
+              <img className="image" src={element.img} alt="" />
+            </div>
+            <div>
           <h2>{element.title}</h2>
-          <button>{element.status}</button>
+          <button className={`status ${element.status}`}>
+            {element.status}
+          </button>
+          </div>
           </div>
           <p>{element.description}</p>
           <hr/>
@@ -20,5 +44,13 @@ export default function AffichDta() {
         
       ))}
     </div>
+    <div>
+      
+       
+          
+       
+    </div>
+    </div>
   );
+
 }

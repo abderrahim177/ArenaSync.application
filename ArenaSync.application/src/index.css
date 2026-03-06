@@ -4,7 +4,7 @@ body{
 }
 
 .container{
-    background-color: rgb(50, 50, 91);
+    background-color: rgba(50, 50, 91, 0.952);
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -25,13 +25,14 @@ body{
     font-size: 30px;
 }
 .balizInput{
+    width: 95%;
     display: flex;
+    justify-content: flex-end;
 }
 #inputSearch{
     padding: 30px 0;
     color: white;
-    width: 50%;
-    margin: auto;
+    width: 40%;
     margin-top: 30px;
     outline: none;
     background-color: rgb(56, 64, 102);
@@ -52,9 +53,10 @@ body{
     cursor: pointer;
 }
 .caontainer:hover{
-    transform: translateY(-10px);
+    transform: translateY(-2px);
     transition: 0.5s;
-     box-shadow: 0 0 10px rgb(58, 58, 58);
+     box-shadow: 0 0 10px rgb(150, 149, 149);
+     border: solid 2px rgb(5, 219, 247);
 }
 .title p{
     font-size: 15px;
@@ -67,6 +69,9 @@ button{
 .icons_container i{
     color: rgb(4, 4, 4);
 }
+.icons_container{
+    width: 97%;
+}
 .user{
     background-color: rgb(19, 19, 19);
     padding: 20px;
@@ -74,9 +79,85 @@ button{
     margin-top: -20px;
 }
 .content{
-    margin-top: 20px;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 50%;
     gap: 20px;
+    padding-left: 10px;
+}
+@media(max-width : 600px){
+   .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-inline: auto;
+    padding-left: 0;
+   }
+   #inputSearch{
+    width: 90%;
+   }
+}
+.green {
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.red{
+    background-color: red;
+}
+.buttons{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.buttons button{
+    padding: 5px 10px;
+    background-color: rgb(82, 82, 151);
+    color: white;
+}
+.buttons button:hover{
+    border: solid 1px rgb(7, 212, 243);
+}
+
+.status{
+  padding:6px 12px;
+  border:none;
+  border-radius:6px;
+  color:white;
+  font-size:14px;
+}
+
+/* On Going */
+.On_Going{
+  background-color:#09eb3e;
+}
+
+/* Upcoming */
+.Upcoming{
+  background-color:#ff7300;
+}
+
+/* Completed */
+.Pending{
+  background-color:#ef0808;
+}
+.image{
+    width: 40px;
+}
+.source{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.source h2{
+    font-size: 20px;
+}
+@media(max-width : 600px){
+    
 }

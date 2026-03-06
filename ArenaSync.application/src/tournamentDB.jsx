@@ -1,11 +1,14 @@
 // src/data/tournamentDB.js
-
+import Basketball from "../src/assets/icons/basketball.png";
+import Badminton from '../src/assets/icons/sport.png';
+import boxing from '../src/assets/icons/boxing-glove.png';
 export const tournamentData = [
   {
     id: "t1",
     title: "Shuttle Masters League",
     sport: "Badminton",
-    status: "On Going", // UtilisÃ© pour la couleur du StatusBadge (ex: success/green)
+    img :Badminton ,
+    status: "On_Going", // UtilisÃ© pour la couleur du StatusBadge (ex: success/green)
     date: "October 12, 2025",
     location: "Badminton Hall 1",
     description: "Top players battle it out with skillful rallies and powerful smashes.",
@@ -23,6 +26,7 @@ export const tournamentData = [
     id: "t2",
     title: "Hoops Championship",
     sport: "Basketball",
+    img :Basketball ,
     status: "Upcoming", // UtilisÃ© pour la couleur du StatusBadge (ex: primary/blue)
     date: "November 2, 2025",
     location: "Indoor Arena - Court A",
@@ -36,6 +40,7 @@ export const tournamentData = [
     id: "t3",
     title: "Ring Masters League",
     sport: "Boxing",
+    img :boxing,
     status: "Pending",
     date: "December 5, 2025",
     location: "Combat Zone Gym",
