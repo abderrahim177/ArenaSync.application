@@ -17,9 +17,9 @@ export const tournamentData = [
     type: "Public",
     participants: [
       { id: "u1", name: "Ethan Miller", status: "Pending", avatar: "https://i.pravatar.cc/150?u=u1" },
-      { id: "u2", name: "Noah Smith", status: "Confirmed", avatar: "https://i.pravatar.cc/150?u=u2" },
-      { id: "u3", name: "James Anderson", status: "Confirmed", avatar: "https://i.pravatar.cc/150?u=u3" },
-      { id: "u4", name: "David Hall", status: "Confirmed", avatar: "https://i.pravatar.cc/150?u=u4" }
+      { id: "u2", name: "Noah Smith", status: "On_Going", avatar: "https://i.pravatar.cc/150?u=u2" },
+      { id: "u3", name: "James Anderson", status: "On_Going", avatar: "https://i.pravatar.cc/150?u=u3" },
+      { id: "u4", name: "David Hall", status: "On_Going", avatar: "https://i.pravatar.cc/150?u=u4" }
     ]
   },
   {
@@ -50,7 +50,7 @@ export const tournamentData = [
     type: "Pro",
     participants: [
       { id: "u5", name: "Aiden Davis", status: "Pending", avatar: "https://i.pravatar.cc/150?u=u5" },
-      { id: "u6", name: "Daniel Thomas", status: "Confirmed", avatar: "https://i.pravatar.cc/150?u=u6" }
+      { id: "u6", name: "Daniel Thomas", status: "On_Going", avatar: "https://i.pravatar.cc/150?u=u6" }
     ]
   }
 ];

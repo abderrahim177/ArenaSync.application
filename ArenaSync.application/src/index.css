@@ -71,6 +71,7 @@ button{
 }
 .icons_container{
     width: 97%;
+    height: 400px;
 }
 .user{
     background-color: rgb(19, 19, 19);
@@ -82,7 +83,7 @@ button{
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 60%;
+    width: 70%;
     gap: 20px;
     padding-left: 10px;
 }
@@ -167,19 +168,48 @@ button{
     margin-top: 30px;
     margin-bottom: 40px;
 }
+.Father{
+    display: flex;
+    flex-direction: column;
+}
+.details{
+    width: 100% !important;
+    margin-top: 30px;
+}
+.Participants{
+    /* width: 90% !important; */
+     display: grid ;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px;
+}
 }
 .Father{
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .details{
-    border: solid ;
-    height: fit-content;
     border-radius: 10px;
     margin-inline: auto;
-    width: 40%;
+    width: 45%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    padding: 10px 0;
+    background-color: rgb(46, 46, 81);
+}
+.details button{
+    padding: 7px 10px;
+    font-size: 20px;
+    background-color: rgb(17, 17, 40);
+    color: white;
+}
+.details hr{
+    width: 90%;
+    margin-inline: auto;
 }
 .details_buttons{
     margin: auto;
@@ -192,4 +222,25 @@ button{
 .details_buttons button{
     background-color: transparent;
     color: white;
+}
+.Participants{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.images{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.part{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.part .status{
+    font-size: 10px;
+    height: 10px;
+    width: 50px;
+    padding:2px 5px 5px 10px;    
 }
