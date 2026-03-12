@@ -293,20 +293,21 @@ button{
   animation: fadeIn 0.3s ease;
 }
 
-.container{
+.containere{
   background: white;
   padding: 20px;
   height: fit-content;
   border-radius: 10px;
-  width: 300px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   animation: popup 0.35s ease;
 }
-.container .name,.Status{
-    width: 90%;
+.containere .name,.Status{
+    width: 100%;
+    margin: auto;
     outline: none;
     background-color: rgb(196, 195, 195);
     border: none;
@@ -314,7 +315,24 @@ button{
     border-radius: 5px;
 }
 .Save{
-    width: 90%;
+    width: 40%;
+    margin: auto;
+    padding: 10px 0;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+.Buttons{
+    display: flex;
+    gap: 10px;
+}
+.Back{
+    width: 40%;
+    margin: auto;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    font-size: 20px;
 }
 /* animation dyal overlay */
 @keyframes fadeIn{
