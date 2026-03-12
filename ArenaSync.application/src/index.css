@@ -1,10 +1,10 @@
 body{
-    background-image: linear-gradient(rgb(32, 37, 59), rgb(24, 23, 59));
+   background-color: white;
     font-family: 'poppins';
 }
 
 .container{
-    background-color: rgba(50, 50, 91, 0.952);
+    background-image: linear-gradient(blue , rgb(103, 187, 243));
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -35,7 +35,7 @@ body{
     width: 40%;
     margin-top: 30px;
     outline: none;
-    background-color: rgb(56, 64, 102);
+    background-color: rgb(193, 244, 250);
     border: none;
     padding: 15px;
     border-radius: 10px;
@@ -53,10 +53,10 @@ body{
     cursor: pointer;
 }
 .caontainer:hover{
-    transform: translateY(-2px);
+    /* transform: translateY(-2px);
     transition: 0.5s;
      box-shadow: 0 0 10px rgb(150, 149, 149);
-     border: solid 2px rgb(5, 219, 247);
+     border: solid 2px rgb(5, 219, 247); */
 }
 .title p{
     font-size: 15px;
@@ -67,14 +67,19 @@ button{
     outline: none;
 }
 .icons_container i{
-    color: rgb(4, 4, 4);
+    color: rgb(51, 41, 96);
 }
 .icons_container{
+    background-color:rgb(209, 230, 245) ;
+    color: black;
     width: 97%;
     height: 400px;
 }
+.count{
+    color: black;
+}
 .user{
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(103, 187, 243);
     padding: 20px;
     border-radius: 50%;
     margin-top: -20px;
@@ -123,7 +128,7 @@ button{
 }
 .buttons button{
     padding: 10px 20px;
-    background-color: rgb(82, 82, 151);
+    background-color: rgb(7, 191, 247);
     color: white;
 }
 .buttons button:hover{
@@ -157,7 +162,7 @@ button{
     display: flex;
     align-items: center;
     gap: 40px;
-    background-color:rgb(59, 59, 103) ;
+    background-color:rgb(107, 202, 247) ;
     padding-bottom:5px;
     border-radius: 6px;
 }
@@ -204,7 +209,7 @@ button{
     align-items: center;
     margin-right: 20px;
     padding: 10px 10px;
-    background-color: rgb(46, 46, 81);
+    background-color: rgb(74, 203, 250);
 }
 .details button{
     padding: 7px 10px;
