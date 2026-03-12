@@ -27,7 +27,7 @@ body{
 .balizInput{
     width: 95%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 #inputSearch{
     padding: 30px 0;
@@ -83,11 +83,16 @@ button{
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 70%;
+    width: 85%;
     gap: 20px;
     padding-left: 10px;
+    height: fit-content;
+    padding-bottom: 20px;
 }
-@media(max-width : 600px){
+.content .title{
+    font-size: 18px;
+}
+@media(max-width : 900px){
    .content{
     display: grid;
     grid-template-columns: 1fr;
@@ -109,7 +114,7 @@ button{
     background-color: red;
 }
 .buttons{
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -132,17 +137,14 @@ button{
   color:white;
   font-size:14px;
 }
-
 /* On Going */
 .On_Going{
   background-color:#09eb3e;
 }
-
 /* Upcoming */
 .Upcoming{
   background-color:#ff7300;
 }
-
 /* Completed */
 .Pending{
   background-color:#ef0808;
@@ -155,6 +157,9 @@ button{
     display: flex;
     align-items: center;
     gap: 40px;
+    background-color:rgb(59, 59, 103) ;
+    padding-bottom:5px;
+    border-radius: 6px;
 }
 .source h2{
     font-size: 20px;
@@ -164,7 +169,7 @@ button{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     margin-top: 30px;
     margin-bottom: 40px;
 }
@@ -173,7 +178,7 @@ button{
     flex-direction: column;
 }
 .details{
-    width: 100% !important;
+    width: 95% !important;
     margin-top: 30px;
 }
 .Participants{
@@ -198,7 +203,7 @@ button{
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
-    padding: 10px 0;
+    padding: 10px 10px;
     background-color: rgb(46, 46, 81);
 }
 .details button{
@@ -237,10 +242,96 @@ button{
     display: flex;
     gap: 10px;
     align-items: center;
+    background-color: rgb(70, 70, 132);
+    border-radius: 10px;
+    padding: 0 5px;
+}
+.part:hover{
+    border: solid 1px blueviolet;
+    cursor: pointer;
 }
 .part .status{
     font-size: 10px;
     height: 10px;
     width: 50px;
     padding:2px 5px 5px 10px;    
+}
+.name{
+    color: white;
+}
+.title_Card{
+    display: flex;
+    justify-content: center;
+}
+.title_Card h2{
+    color: white;
+}
+.btn{
+    padding: 10px 5px;
+    background-color: #8b8c8a;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 0 15px #727271;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
+
+  animation: fadeIn 0.3s ease;
+}
+
+.container{
+  background: white;
+  padding: 20px;
+  height: fit-content;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: popup 0.35s ease;
+}
+.container .name,.Status{
+    width: 90%;
+    outline: none;
+    background-color: rgb(196, 195, 195);
+    border: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+/* animation dyal overlay */
+@keyframes fadeIn{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+/* animation dyal form */
+@keyframes popup{
+  from{
+    transform: scale(0.7);
+    opacity:0;
+  }
+  to{
+    transform: scale(1);
+    opacity:1;
+  }
 }
