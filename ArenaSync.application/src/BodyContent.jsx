@@ -9,29 +9,25 @@ export default function AffichDta() {
   const [Form, setform] = useState(false);
   const [filter, setFilter] = useState("All");
   const [image, setimage] = useState("");
-
+  let counter = 0;
   function AddParticpant() {
-
+    counter++
     if (!selectedTournament) return;
-
     const part = {
-      id: Date.now(),
+      id:counter,
       name: name,
       status: status,
       avatar: image,
     };
-
     setSelectedTournament({
       ...selectedTournament,
       participants: [...selectedTournament.participants, part],
     });
-
     setform(false);
     setname("");
     setstatus("");
     setimage("");
   }
-
   const filteredData =
     filter === "All"
       ? tournamentData
