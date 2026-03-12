@@ -313,7 +313,9 @@ button{
     padding: 10px 5px;
     border-radius: 5px;
 }
-
+.Save{
+    width: 90%;
+}
 /* animation dyal overlay */
 @keyframes fadeIn{
   from{
