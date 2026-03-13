@@ -52,6 +52,9 @@ body{
     padding: 5px;
     cursor: pointer;
 }
+.paragraph{
+    color: black;
+}
 .title p{
     font-size: 15px;
 }
@@ -241,7 +244,7 @@ button{
     display: flex;
     gap: 10px;
     align-items: center;
-    background-color: rgb(70, 70, 132);
+    background-color: rgb(254, 255, 255);
     border-radius: 10px;
     padding: 0 5px;
 }
@@ -253,17 +256,18 @@ button{
     font-size: 10px;
     height: 10px;
     width: 50px;
-    padding:2px 5px 5px 10px;    
+    padding:5px 10px;   
+    color: rgb(255, 255, 255);
 }
 .name{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .title_Card{
     display: flex;
     justify-content: center;
 }
 .title_Card h2{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .btn{
     padding: 10px 5px;
@@ -300,24 +304,32 @@ button{
   width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   animation: popup 0.35s ease;
+}
+label{
+    font-weight: 500;
 }
 .containere .name,.Status{
     width: 100%;
     margin: auto;
     outline: none;
-    background-color: rgb(196, 195, 195);
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid 4px black !important;
     border: none;
     padding: 10px 5px;
     border-radius: 5px;
+    box-shadow: 0 0 3px rgb(29, 29, 67);
+}
+::placeholder{
+    color: grey;
 }
 .Save{
-    width: 40%;
+    width: 30%;
     margin: auto;
     padding: 10px 0;
-    background-color: blue;
+    background-color: rgb(105, 224, 239);
     color: white;
     font-size: 20px;
 }
@@ -326,10 +338,10 @@ button{
     gap: 10px;
 }
 .Back{
-    width: 40%;
+    width: 30%;
     margin: auto;
     padding: 10px 0;
-    background-color: black;
+    background-color: rgb(45, 26, 81);
     color: white;
     font-size: 20px;
 }
@@ -353,4 +365,17 @@ button{
     transform: scale(1);
     opacity:1;
   }
+}
+.butons_Filted{
+    width: 97%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(53, 210, 245);
+    padding: 10px;
+}
+.butons_Filted .info{
+    background-color: transparent;
+}
+.butons_Filted .Brackets{
+    background-color: transparent;
 }

@@ -59,7 +59,7 @@ export default function AffichDta() {
                     </button>
                   </div>
                 </div>
-                <p>{element.description}</p>
+                <p className="paragraph">{element.description}</p>
                 <hr />
                 <p className="count">
                   <i className="fa-solid fa-users"></i>{" "}
@@ -112,20 +112,28 @@ export default function AffichDta() {
                   style={{ borderRadius: "50%" }}
                 />
               )}
+              <div>
+                <label htmlFor="name">Name of participant !</label>
               <input
+              id="name"
                 className="name"
                 type="text"
                 placeholder="name"
                 value={name}
                 onChange={(e) => setname(e.target.value)}
               />
+              </div>
+              <div>
+                <label htmlFor="status">Status of participant !</label>
               <input
+              id="status"
                 className="Status"
                 type="text"
                 placeholder="Status"
                 value={status}
                 onChange={(e) => setstatus(e.target.value)}
               />
+              </div>
               <div className="Buttons">
                 <button className="Save" onClick={AddParticpant}>
                   Save
@@ -139,8 +147,10 @@ export default function AffichDta() {
         )}
       </div>
       <div className="details">
-        <div>
-          <button>Participant</button>
+        <div className="butons_Filted">
+          <button className="info">Info</button>
+          <button className="participants">Participant</button>
+          <button className="Brackets">Bracket</button>
         </div>
         <hr />
         {selectedTournament && (
