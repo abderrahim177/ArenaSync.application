@@ -5,8 +5,7 @@ export default function CeartInput() {
         id="inputSearch"
         type="text"
         placeholder="🔍 Search here"
-        // value={search}
-        // onChange={(e) => setSearch(e.target.value)}
+        
       />
     </div>
   );
