@@ -52,12 +52,6 @@ body{
     padding: 5px;
     cursor: pointer;
 }
-.caontainer:hover{
-    /* transform: translateY(-2px);
-    transition: 0.5s;
-     box-shadow: 0 0 10px rgb(150, 149, 149);
-     border: solid 2px rgb(5, 219, 247); */
-}
 .title p{
     font-size: 15px;
 }
